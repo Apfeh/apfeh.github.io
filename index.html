@@ -1,54 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #0a84ff, #1e1e2f);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #c9d1d9;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .project {
+      margin-bottom: 2rem;
+      border: 1px solid #30363d;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: #161b22;
+      transition: 0.3s ease;
+    }
+
+    .project:hover {
+      border-color: #58a6ff;
+      transform: translateY(-4px);
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    ul li {
+      background: #21262d;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0a0a0a;
+      color: #8b949e;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Your Name</h1>
-    <p>Final-Year Computer Science Student | Aspiring Software Developer</p>
+    <p>Final-Year Computer Science Student | Full-Stack Developer | Creator of Clean Code</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm a final-year Computer Science student at Tshwane University of Technology with a passion for software development. I'm currently building projects using Python, FastAPI, React, and PostgreSQL. I'm eager to apply my skills in a professional environment and contribute to meaningful tech solutions.</p>
+    <p>I'm a passionate software developer who lives to build, debug, and deliver. With a strong foundation in Computer Science from Tshwane University of Technology and hands-on experience building modern full-stack apps, I thrive at the intersection of technology and real-world impact. Every line of code I write is a step toward a better, smarter future.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
       <h3>Health & Safety Training App</h3>
-      <p>Full-stack web app built with FastAPI and React to track training and quizzes for employees. PostgreSQL for data storage.</p>
+      <p>Developed a scalable full-stack platform with FastAPI and React for employee training and video tracking. Features backend-based progress persistence and quiz validation.</p>
     </div>
     <div class="project">
       <h3>Insurance Fraud Prevention System</h3>
-      <p>A three-tier web application to detect fraudulent activities using AI techniques and Django.</p>
+      <p>Led a team to create a secure three-tier web application with Django and MySQL to detect and prevent fraudulent claims using machine learning logic and REST APIs.</p>
     </div>
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
+    <h2>Tech Stack</h2>
     <ul>
-      <li>Python, JavaScript, TypeScript</li>
-      <li>FastAPI, Flask, Django</li>
-      <li>React, HTML, CSS</li>
-      <li>PostgreSQL, MySQL</li>
-      <li>Git, Docker</li>
+      <li>Python</li>
+      <li>FastAPI</li>
+      <li>Flask</li>
+      <li>React & TypeScript</li>
+      <li>PostgreSQL & MySQL</li>
+      <li>Docker</li>
+      <li>Git & GitHub</li>
+      <li>REST APIs</li>
     </ul>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Name</p>
+    <p>&copy; 2025 Your Name. Built with ❤️, passion, and zero sleep.</p>
   </footer>
 </body>
 </html>
