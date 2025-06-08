@@ -2,155 +2,194 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Software Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apfeswaho Ramarumo | Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #0d1117;
-            color: #c9d1d9;
-            line-height: 1.6;
-        }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
 
-        header {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(135deg, #0a84ff, #1e1e2f);
-        }
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background: linear-gradient(135deg, #0a84ff, #1e1e2f);
+      position: relative;
+    }
 
-        header h1 {
-            font-size: 3rem;
-            color: #fff;
-        }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin: 0 auto 1rem;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
 
-        header p {
-            font-size: 1.2rem;
-            color: #c9d1d9;
-        }
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
 
-        section {
-            padding: 3rem 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
+    header p {
+      font-size: 1.1rem;
+      color: #d0d0d0;
+    }
 
-        h2 {
-            color: #58a6ff;
-            margin-bottom: 1rem;
-            font-size: 2rem;
-        }
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-        .project {
-            margin-bottom: 2rem;
-            border: 1px solid #30363d;
-            padding: 1rem;
-            border-radius: 8px;
-            background-color: #161b22;
-            transition: 0.3s ease;
-        }
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
 
-        .project:hover {
-            border-color: #58a6ff;
-            transform: translateY(-4px);
-        }
+    .project {
+      margin-bottom: 2rem;
+      border: 1px solid #30363d;
+      padding: 1.2rem;
+      border-radius: 10px;
+      background-color: #161b22;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
 
-        ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+    .project:hover {
+      border-color: #58a6ff;
+      transform: translateY(-5px);
+    }
 
-        ul li {
-            background: #21262d;
-            padding: 10px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            color: #8b949e;
-        }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+    }
 
-        a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
+    ul li {
+      background: #21262d;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #8b949e;
+      transition: background 0.3s ease;
+    }
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: #0a0a0a;
-            color: #8b949e;
-        }
-    </style>
+    ul li:hover {
+      background: #30363d;
+      color: #c9d1d9;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0a0a0a;
+      color: #8b949e;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>Apfeswaho Ramarumo</h1>
-        <p>Final-Year Computer Science Student | Full-Stack Developer | Creator of Clean Code</p>
-    </header>
+  <header>
+    <img src="profile.jpg" alt="Apfeswaho Ramarumo" class="profile-pic" />
+    <h1>Apfeswaho Ramarumo</h1>
+    <p>Final-Year Computer Science Student | Full-Stack Developer | Creator of Clean Code</p>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate software developer who lives to build, debug, and deliver. With a strong foundation in
-            Computer Science from Tshwane University of Technology and hands-on experience building modern full-stack
-            apps, I thrive at the intersection of technology and real-world impact. Every line of code I write is a step
-            toward a better, smarter future.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate developer who lives to build, debug, and deliver. With a strong foundation in Computer Science
+      from Tshwane University of Technology and hands-on experience building modern full-stack apps, I thrive at the
+      intersection of technology and impact. Every line of code I write is a step toward a better, smarter world.</p>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Health & Safety Training App</h3>
-            <p>Developed a scalable full-stack platform with FastAPI and React for employee training and video tracking.
-                Features backend-based progress persistence and quiz validation.</p>
-        </div>
-        <div class="project">
-            <h3>Insurance Fraud Prevention System</h3>
-            <p>Led a team to create a secure three-tier web application with Django and MySQL to detect and prevent
-                fraudulent claims using machine learning logic and REST APIs.</p>
-        </div>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Health & Safety Training App</h3>
+      <p>Developed a scalable full-stack platform with FastAPI and React for employee training and video tracking.
+        Features backend-based progress persistence and quiz validation.</p>
+    </div>
+    <div class="project">
+      <h3>Insurance Fraud Prevention System</h3>
+      <p>Led a team to create a secure three-tier web application with Django and MySQL to detect and prevent
+        fraudulent claims using machine learning logic and REST APIs.</p>
+    </div>
+  </section>
 
-    <section id="skills">
-        <h2>Tech Stack</h2>
-        <ul>
-            <li>Java</li>
-            <li>HTML/CSS</li>
-            <li>Bootstrap</li>
-            <li>JavaScript</li>
-            <li>Assembly</li>
-            <li>Kotlin</li>
-            <li>Python</li>
-            <li>FastAPI</li>
-            <li>Flask</li>
-            <li>Django</li>
-            <li>React & TypeScript</li>
-            <li>PostgreSQL & MySQL</li>
-            <li>Docker</li>
-            <li>Git & GitHub</li>
-            <li>REST APIs</li>
-        </ul>
-    </section>
+  <section id="skills">
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>Java</li>
+      <li>HTML/CSS</li>
+      <li>Bootstrap</li>
+      <li>JavaScript</li>
+      <li>Assembly</li>
+      <li>Kotlin</li>
+      <li>Python</li>
+      <li>FastAPI</li>
+      <li>Flask</li>
+      <li>Django</li>
+      <li>React & TypeScript</li>
+      <li>PostgreSQL & MySQL</li>
+      <li>Docker</li>
+      <li>Git & GitHub</li>
+      <li>REST APIs</li>
+    </ul>
+  </section>
 
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Email: <a href="mailto:apfeswahoramarumo1@gmail.com">apfeswahoramarumo1@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/apfeswaho-ramarumo-781b23231"
-                target="_blank">Apfeswaho Ramarumo</a></p>
-        <p>GitHub: <a href="https://github.com/Apfeh" target="_blank">github.com/Apfeh</a></p>
-    </section>
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="mailto:apfeswahoramarumo1@gmail.com">apfeswahoramarumo1@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/apfeswaho-ramarumo-781b23231"
+        target="_blank">Apfeswaho Ramarumo</a></p>
+    <p>GitHub: <a href="https://github.com/Apfeh" target="_blank">github.com/Apfeh</a></p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Apfeswaho Ramarumo. Built with ❤️, passion, and zero sleep.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Apfeswaho Ramarumo. Built with ❤️, ambition, and one too many cups of coffee.</p>
+  </footer>
 </body>
 
 </html>
