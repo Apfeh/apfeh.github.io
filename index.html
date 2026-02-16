@@ -4,136 +4,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Apfeswaho Ramarumo, a final-year Computer Science student and full-stack developer building scalable and impactful web applications." />
+  <meta property="og:title" content="Apfeswaho Ramarumo | Software Developer" />
+  <meta property="og:description"
+    content="Explore projects, tech stack, and contact details for Apfeswaho Ramarumo, a full-stack software developer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://apfeh.github.io/" />
+  <meta property="og:image" content="https://apfeh.github.io/20250606_1725112.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apfeswaho Ramarumo | Software Developer" />
+  <meta name="twitter:description"
+    content="Portfolio of Apfeswaho Ramarumo featuring full-stack projects, skills, and contact details." />
+  <meta name="twitter:image" content="https://apfeh.github.io/20250606_1725112.jpg" />
   <title>Apfeswaho Ramarumo | Software Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0d1117;
-      color: #c9d1d9;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 4rem 2rem 2rem;
-      background: linear-gradient(135deg, #0a84ff, #1e1e2f);
-      position: relative;
-    }
-
-    .profile-pic {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin: 0 auto 1rem;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #fff;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #d0d0d0;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      color: #58a6ff;
-      margin-bottom: 1rem;
-      font-size: 2rem;
-    }
-
-    .project {
-      margin-bottom: 2rem;
-      border: 1px solid #30363d;
-      padding: 1.2rem;
-      border-radius: 10px;
-      background-color: #161b22;
-      transition: transform 0.3s ease, border-color 0.3s ease;
-    }
-
-    .project:hover {
-      border-color: #58a6ff;
-      transform: translateY(-5px);
-    }
-
-    ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 0;
-    }
-
-    ul li {
-      background: #21262d;
-      padding: 10px 15px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      color: #8b949e;
-      transition: background 0.3s ease;
-    }
-
-    ul li:hover {
-      background: #30363d;
-      color: #c9d1d9;
-    }
-
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #0a0a0a;
-      color: #8b949e;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      section {
-        padding: 2rem 1rem;
-      }
-
-      .profile-pic {
-        width: 120px;
-        height: 120px;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
+    <img class="profile-pic" src="20250606_1725112.jpg" alt="Portrait of Apfeswaho Ramarumo" />
     <h1>Apfeswaho Ramarumo</h1>
     <p>Final-Year Computer Science Student | Full-Stack Developer | Creator of Clean Code</p>
+    <div class="hero-actions">
+      <a class="button" href="#projects">View Projects</a>
+      <a class="button button-secondary" href="mailto:apfeswahoramarumo1@gmail.com">Contact Me</a>
+    </div>
   </header>
 
   <section id="about">
@@ -146,14 +43,20 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <h3>Health & Safety Training App</h3>
+      <h3>Health &amp; Safety Training App</h3>
       <p>Developed a scalable full-stack platform with FastAPI and React for employee training and video tracking.
-        Features backend-based progress persistence and quiz validation.</p>
+        Features backend-based progress persistence and quiz validation to support reliable completion tracking.</p>
+      <p class="project-links">
+        <a href="https://github.com/Apfeh" target="_blank" rel="noopener noreferrer">Source Code</a>
+      </p>
     </div>
     <div class="project">
       <h3>Insurance Fraud Prevention System</h3>
       <p>Led a team to create a secure three-tier web application with Django and MySQL to detect and prevent
         fraudulent claims using machine learning logic and REST APIs.</p>
+      <p class="project-links">
+        <a href="https://github.com/Apfeh" target="_blank" rel="noopener noreferrer">Source Code</a>
+      </p>
     </div>
   </section>
 
@@ -170,10 +73,10 @@
       <li>FastAPI</li>
       <li>Flask</li>
       <li>Django</li>
-      <li>React & TypeScript</li>
-      <li>PostgreSQL & MySQL</li>
+      <li>React &amp; TypeScript</li>
+      <li>PostgreSQL &amp; MySQL</li>
       <li>Docker</li>
-      <li>Git & GitHub</li>
+      <li>Git &amp; GitHub</li>
       <li>REST APIs</li>
     </ul>
   </section>
@@ -181,9 +84,9 @@
   <section id="contact">
     <h2>Get in Touch</h2>
     <p>Email: <a href="mailto:apfeswahoramarumo1@gmail.com">apfeswahoramarumo1@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/apfeswaho-ramarumo-781b23231"
-        target="_blank">Apfeswaho Ramarumo</a></p>
-    <p>GitHub: <a href="https://github.com/Apfeh" target="_blank">github.com/Apfeh</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/apfeswaho-ramarumo-781b23231" target="_blank"
+        rel="noopener noreferrer">Apfeswaho Ramarumo</a></p>
+    <p>GitHub: <a href="https://github.com/Apfeh" target="_blank" rel="noopener noreferrer">github.com/Apfeh</a></p>
   </section>
 
   <footer>
